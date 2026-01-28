@@ -23,11 +23,11 @@ public class LoginController {
     private void handleButtonClick() {
         if (messageLogin.getText().equals("admin") && messagePassword.getText().equals("123456")) {
             messageLabel.setText("Correct!");
-            messageLabel.getStyleClass().setAll("btn", "btn-success");
+            messageLabel.getStyleClass().setAll("alert", "alert-success");
             messageLabel.setVisible(true);
         } else {
             messageLabel.setText("Try again :)"); 
-            messageLabel.getStyleClass().setAll("btn", "btn-danger");
+            messageLabel.getStyleClass().setAll("alert", "alert-danger");
             messageLabel.setVisible(true);
         }
     }
